@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<center>
+    
+	
+<h1 class='display-1'>CAPTION It</h1>
+<h4> </h4>
+
+<br>
+<br>
+
+<form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+    <input type="file" name='file1'>
+<input type="submit" name="btn" value='predict caption' class='btn btn-warning'> 
+</form>
+</center>
+
+{%endblock%}
